@@ -1,0 +1,25 @@
+.formulario {
+    display: flex;
+    background: linear-gradient(180deg, #232136, #4b00a0b3, #232136);
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.formulario form {
+    max-width: 80%;
+    background: linear-gradient(#4b0082e6, #00008bb3, #9370db80, #ffffff57);
+    border-radius: 20px;
+    padding: 36px 64px;
+    box-shadow: 0 10px 20px #00000040, 0 6px 6px #0000003b;
+}
+
+.formulario h2 {
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 475px) {
+    .formulario form {
+        border-radius: 0;
+    }
+}
