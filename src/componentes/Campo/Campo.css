@@ -49,3 +49,15 @@
     transition: 1s;
     height: 40px;
 }
+
+@media (max-width: 365px) {
+    .campo label {
+        padding: 5px;
+    }
+    .campo {
+        padding: 10px;
+    }
+    .campo input {
+        padding: 15px;
+    }
+}

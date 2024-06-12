@@ -23,7 +23,7 @@ const Rodape = () => {
                 </ul>
             </section>
             <section>
-                <h3>Desenvolvido por Caio Anderson</h3>
+                <h3 className='rodape'>Desenvolvido por <span>Caio Anderson</span></h3>
             </section>
         </footer>
     )

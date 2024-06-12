@@ -22,7 +22,7 @@ const Campo = (props) => {
                 value={props.valor}
                 onChange={aoDigitado}
                 required={props.obrigatorio}
-                placeholder={placeholderModificada}
+                placeholder={props.tipo === 'color' ? undefined : placeholderModificada}
             />
         </div>
     )
