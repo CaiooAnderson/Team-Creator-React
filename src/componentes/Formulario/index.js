@@ -7,7 +7,7 @@ import Botao from "../Botao";
 const Formulario = ({ aoCadastrar, times, aoCriarTime }) => {
   const [nome, setNome] = useState('');
   const [cargo, setCargo] = useState('');
-  const [imagem, setImagem] = useState('');
+  const [imagem, setImagem] = useState(null);
   const [time, setTime] = useState('');
   const [nomeTime, setNomeTime] = useState('');
   const [corTime, setCorTime] = useState('#000000');
@@ -23,9 +23,9 @@ const Formulario = ({ aoCadastrar, times, aoCriarTime }) => {
     });
     setNome('');
     setCargo('');
-    setImagem('');
+    setImagem(null);
     setTime('');
-  };
+};
 
   const criarNovoTime = (evento) => {
     evento.preventDefault();
@@ -58,8 +58,9 @@ const Formulario = ({ aoCadastrar, times, aoCriarTime }) => {
         />
         <Campo 
           obrigatorio={true}
+          tipo='file'
           label="Imagem" 
-          placeholder="Digite o endereço da imagem"
+          placeholder="Escolha a imagem"
           valor={imagem}
           aoAlterado={valor => setImagem(valor)}
         />
